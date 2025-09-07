@@ -15,7 +15,7 @@ export default function Index() {
     loading: moviesLoading, 
     error: moviesError} = useFetch(() => fetchMovies({
     query:''
-  }))
+  }));
 
   return (
     <View className="flex-1 bg-primary">
@@ -35,11 +35,12 @@ export default function Index() {
           <Text>Error: {moviesError?.message} </Text>
          ) : (
         <View className="flex-1 mt-5">
-          <SearchBar
-            onPress = {()=>router.push("/search")}
-            placeholder = "Search for a movie"
-          />
 
+          <SearchBar
+              placeholder="Search for a movie"
+              value={''}
+              onChangeText={() =>{}}
+            />
           <>
             <Text className="text-lg text-white font-bold mt-5 mb-3">Latest Movies</Text>
             <FlatList
