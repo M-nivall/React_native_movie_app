@@ -29,4 +29,5 @@ const SearchBar = ({ placeholder, onPress, value, onChangeText }: Props) => {
     </View>
   );
 };
+
 export default SearchBar;
