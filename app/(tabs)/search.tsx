@@ -108,4 +108,5 @@ const search = () => {
     </View>
   );
 };
+
 export default search;
