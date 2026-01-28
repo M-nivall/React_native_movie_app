@@ -25,4 +25,5 @@ const TrendingCard = ({
     </Link>
   );
 };
+
 export default TrendingCard;
